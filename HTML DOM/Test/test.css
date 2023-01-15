@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#text{
+  background-color: rgb(228, 202, 202);
+  
+}
+
+#readMore{
+    color: blue;
+    text-decoration: underline;
+}
+
+#extraText {
+    background-color: #fff;
+    display: none;
+}

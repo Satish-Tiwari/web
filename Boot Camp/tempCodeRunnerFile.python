@@ -1,0 +1,6 @@
+from pytube import YouTube
+from pytube.request import stream
+from pytube.streams import Stream
+video = YouTube("https://www.youtube.com/watch?v=gI24VWfgqq8&list=RDgI24VWfgqq8&start_radio=1")
+Stream = video.streams.get_highest_resolution()
+Stream.download()

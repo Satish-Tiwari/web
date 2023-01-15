@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container
+        {
+            display: flex;
+        }
+        .card
+        {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: royalblue;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spreed-radius color;  */
+            /* box-shadow: 7px 5px 10px 5px rgba(15, 80, 80, 0.5); */
+            box-shadow: inset 3px 5px green, 4px 5px red;
+        }
+        .card h2
+        {
+            /* text-shadow: 3px 4px white;  */
+            text-shadow: 3px 4px 2px whitesmoke;
+        }
+    </style>
+</head>
+<body>
+          <div class="container">
+              <div class="card" id="car-1">
+                <h2>  This is C++ Course </h2>
+                <p> I have started C++ course. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam a sint aliquam asperiores perferendis magni. Recusandae corrupti natus sunt laboriosam quod dolores saepe, voluptatem blanditiis deleniti at vel temporibus.</p>
+                </div>
+              <div class="card" id="car-2">
+                <h2>  This is HTLM Course </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis quam nemo quo unde ab debitis maxime consectetur delectus tempora, nam nesciunt deleniti rem itaque distinctio dolores, laudantium temporibus id!</p>
+                </div>
+              <div class="card" id="car-3">
+                <h2>  Card3 </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quo, laboriosam aut in velit porro optio sunt consectetur error cumque atque, provident dolor enim, vero minus. Debitis eum ea ratione.</p>
+                </div>
+          </div>
+</body>
+</html>

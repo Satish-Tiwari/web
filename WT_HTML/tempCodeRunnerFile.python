@@ -1,0 +1,15 @@
+A = [3]
+N = 1
+S = sum(A)
+ans  = A[0]
+i = 0
+flag = 0
+while(i<N):
+    if(S <= N*A[i]):
+        if flag == 0:
+            ans = A[i]
+            flag += 1
+        if(ans >= A[i]):
+            ans = A[i]
+    i += 1
+print(ans)

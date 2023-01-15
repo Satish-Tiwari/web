@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to create a week field.</p>
+    <button onclick="myfunction()">Try it</button>
+    <script>
+        function myfunction()
+        {
+            var x = document.createElement("Input");
+            x.setAttribute("type","week");
+            x.setAttribute("value","2000-12-08");
+            document.body.appendChild(x);
+        }
+    </script>
+</body>
+</html>

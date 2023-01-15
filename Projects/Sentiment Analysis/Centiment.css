@@ -1,0 +1,265 @@
+/* For Navigation Bar */
+.navbar
+{
+    background-color: black;
+    border-radius: 0px;
+    margin: 0%;
+}
+.navbar ul
+{
+    overflow: auto;
+}
+.navbar li
+{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+.navbar li a
+{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover
+{
+    color: red;
+}
+.search
+{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input
+{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+/*For others*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: #f2f8f8;
+} */
+/* Div1 start from here */
+.div1 h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 1px 0px;
+    background-color: #525150;
+    font-family: monospace;
+    border-bottom: 2px solid black;
+    text-shadow: 3px 1px 5px darkred;
+    color: cornflowerblue;
+}
+.div1 p{
+    margin-left: 75px;
+    margin-top: 41px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.div1 ul{
+    margin-left: 168px;
+    margin-top: 19px;
+    font-size: 21px;
+}
+.div2{
+    margin-left: 93px;
+    font-size: 20px;
+}
+.div2 h3{
+    font-weight: normal;
+}
+.div2 a{
+    position: absolute;
+    left: 639px;
+    top: 325px;
+    border: 2px solid #14161e;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #355879;
+    border-radius: 10px;
+}
+.div2 a:hover{
+    background-color: #87a24b;
+    color: #040405;
+    cursor: pointer;
+}
+.btns{
+    margin-top: 199px;
+    text-align: center;
+}
+.btns input[type=file]{
+    color: red;
+    font-size: 20px;
+    border-radius: 9px;
+    box-shadow: inset 0px 1px 8px 5px black;
+
+}
+.btns input[type=submit]{
+    padding: 3px 26px;
+    margin-left: 68px;
+    font-size: 18px;
+    color: #f1f1f1;
+    background-color: #413b3a6b;
+    box-shadow: 0px 0px 4px 2px black;
+    outline: none;
+}
+.btns span{
+    position: absolute;
+    top: 612px;
+    left: 667px;
+}
+.btns span a{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    border : 2px solid black;
+    padding: 5px;
+
+}
+/* Footer-CSS start from here */
+
+#foot {
+    background-color: #0c0a0cbf;
+    height: 300px;
+}
+
+/* First div of foot css start from here */
+
+.foot-main {
+    margin-top: 335px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 25px;
+}
+
+
+/* Foot-1 CSS start from here */
+
+.foot-1 {
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.foot-1 h1 {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+.foot-1 p {
+    text-align: justify;
+    margin-left: 34px;
+    margin-top: 10px;
+}
+
+.foot-1 a {
+    text-decoration: none;
+    color: #ff2525;
+    margin-left: 87px;
+}
+
+.foot-1 .foot-1-add a {
+    display: contents;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Foot-2 CSS start from here */
+
+.foot-2 {
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.foot-2 h1 {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+.foot-2 a {
+    display: flex;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: 72px;
+    color: white;
+}
+
+
+/* Foot-3 CSS start from here */
+
+.foot-3 {
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.foot-3 h1 {
+    margin-top: 18px;
+}
+
+.foot-3 hr {
+    margin: 0px 10px;
+}
+
+
+/* Foot-4 CSS start from here */
+
+.foot-4 {
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.foot-4 div {
+    display: flex;
+    margin-top: 51px;
+    justify-content: center;
+}
+
+.foot-4 div img:hover {
+    opacity: 75%;
+}
+
+.foot-4 p {
+    margin: 0px 6px;
+}
+
+.foot-4 .foot-4-gplus {
+    margin-top: -6px;
+}
+
+
+/* Second div of foot css start from here */
+
+
+/* Foot-main-2 CSS start from here */
+
+.foot-main-2 {
+    align-items: center;
+    margin-top: 48px;
+}
+
+.foot-main-2 p {
+    color: yellow;
+    text-align: center;
+}
+
+.foot-main-2 p a {
+    text-decoration: none;
+    color: yellow;
+}

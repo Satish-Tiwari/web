@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Email-ID</title>
+    <script>
+        function validateEmailID()
+        {
+            var str = document.myForm.email.value;
+            var len = str.lenght;
+            var index_attherate = str.indexOf("@");
+            var index_dot = str.indexOf(".");
+            var emailId = document.myForm.email;
+            if((emailId.value == null) || (emailId.value == " "))
+            {
+                window.alert("please enter your emailId : ");
+                emailId.focus();
+                return false;
+            }
+            if((str.indexOf(".")==-1)||(str.indexOf(".")==0)||(str.indexOf("@")==-1)||(str.indexOf("@")==0)
+               ||(str.indexOf(".") == str.indexOf("@")))
+            {
+                window.alert("Invalid email id");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myForm">
+        Email: <input type="email" name="email"> <br>
+        <button type="button" onclick="validateEmailID()">validate</button>
+    </form>
+</body>
+</html>

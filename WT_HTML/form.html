@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      section {
+        border: 2px solid rgb(39, 33, 33);
+        padding: 5px;
+        border-radius: 5px;
+      }
+      section h2 {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      form div {
+        margin: 5px;
+        padding: 2px 0px;
+      }
+      form div input {
+        margin: 5px 0px;
+        margin-left: 15px;
+        padding: 2px 4px;
+      }
+      .about {
+        text-align: center;
+      }
+      .sub_re {
+        text-align: center;
+      }
+      .sub_re input {
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sec">
+      <h2>Registration Form</h2>
+      <hr />
+      <form>
+        <div>Name:<input type="text" name="Name" /><br /></div>
+        <div>
+          Mb:&nbsp;&nbsp;&nbsp;&nbsp;<input
+            type="number"
+            name="mb"
+            maxlength="12"
+          /><br />
+        </div>
+        <div>Email:<input type="email" name="email" /><br /></div>
+        <div>
+          DOB:&nbsp;<input type="date" name="dob" /><br />
+        </div>
+        <div>
+          Password:<input type="password" name="pswd" /><br />
+        </div>
+        <!-- division for gender -->
+        <div>
+          Gender: &nbsp;Male<input type="radio" name="gender" value="m" />
+          Female<input type="radio" name="gender" value="f" /><br />
+        </div>
+        <!-- division for course option -->
+        <div>
+          <b>Course Opt:</b><br />
+          B.Tech<input type="checkbox" name="course" value="btech" />&nbsp;
+          BCA<input type="checkbox" name="course" value="bca" />&nbsp;
+          B.Com<input type="checkbox" name="course" value="bcom" />&nbsp;
+          B.Sc<input type="checkbox" name="course" value="bsc" />&nbsp;
+        </div>
+        <!-- division for About Yourself -->
+        <b>About Yourself:</b><br />
+        <div class="about">
+          <textarea name="about" id="ab04" cols="30" rows="5"></textarea><br />
+        </div>
+        <!-- division for submit and reset -->
+        <div class="sub_re">
+          <input type="submit" name="submit" />
+          <input type="reset" name="reset" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

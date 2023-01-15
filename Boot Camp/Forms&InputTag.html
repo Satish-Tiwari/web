@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms Tutorial</h2>
+
+    <form action="backend.php">
+     <label for="name">Name</label>
+     <div>
+         <input type="text" name="myname" id="name">
+     </div> <br>
+
+     <label for="role">Role</label>
+     <div>
+         <input type="text" name="myRole" id="role">
+     </div> <br>
+
+     <label for="email">E-mail</label>
+     <div>
+         <input type="email" name="my Email" id="email">
+     </div><br>
+
+     <label for="date">Date</label>
+     <div>
+         <input type="date" name="myDate" id="date">
+     </div><br>
+
+     <label for="bonus">Bonus</label>
+     <div>
+         <input type="number" name="myBonus" id="bonus">
+     </div> <br>
+
+     
+     <div>
+         Are you eligibile?:<input type="checkbox" name="myeligibility" checked>
+     </div> <br>
+
+     
+     <div>
+       Gender:Male<input type="radio" name="Gender" checked> Female<input type="radio" name="Gender"> Other<input type="radio" name="Gender">
+     </div><br>
+
+     <label for="write">Write about yourself-</label>
+     <div>
+         <textarea name="mytext" id="write" cols="30" rows="10"></textarea>
+     </div> <br>
+
+     <label for="car">Car</label>
+     <div>
+         <select name="mycar" id="car">
+             <option value="ind" selected>Indica</option>
+             <option value="swf">Swift</option>
+             <option value="jag">Jaguar</option>
+         </select>
+     </div> <br>
+
+     <div>
+         <input type="submit" value="Submit Now">
+         <input type="reset" value="Reset now">
+     </div>
+
+        </form>
+</body>
+</html>

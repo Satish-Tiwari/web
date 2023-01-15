@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyscript</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - matplotlib
+    </py-env>
+</head>
+<body>
+    <p style="text-align: center;"> Before importing any module in python, here we have to initialise that module inside py-env tag.</p> <br>
+    <p style="text-align: center;">py-script</p>
+    <p>Plotting a histogram of Standard Normal Distribution</p>
+    <div id="plot"></div>
+    <py-script output="plot">
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(42)
+
+rv = np.random.standard_normal(1000)
+
+fig, ax = plt.subplots()
+ax.hist(rv, bins=30)
+fig
+    </py-script>
+
+    <p style="text-align: center;">py-script --external python file</p>
+    <!-- <py-script src =  "/piPlot.py"></py-script>  -->
+    <py-script src = "/test.py"></py-script>  <!--Inserting external python file-->
+    <py-script src = "/test2.py"></py-script> <!--Inserting external python file-->
+
+    <h1 style="text-align: center;">Now, py-repl tag (Write python code and execute that...)</h1>
+    <py-repl></py-repl>
+
+</body>
+</html>

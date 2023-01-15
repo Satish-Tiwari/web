@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Script</title>
+</head>
+<body>
+    <!-- <h1>Java-Script Output: innerHTML</h1>
+    innerHTML
+    <p id="demo"></p>
+    <script>
+        function myfunction()
+        {
+            document.getElementById("demo").innerHTML = 5+5;
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Try it</button> -->
+
+    <!-- <h1>Java-Script output: document.write()</h1>
+    <script>
+        function myfunction()
+        {
+            document.write("hello, how are you!");
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Try it</button>
+    documnet.write() only used for testing.... -->
+
+    <!-- <h1>Java-Script output: window.alert()</h1>
+    <script>
+        function myfunction()
+        {
+            window.alert("hello!");
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Try it</button> -->
+
+    <!-- <h1>Java-Script output: console.log()</h1>
+    <script>
+        function myfunction()
+        {
+            console.log("hello!");
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Try it</button>
+    for debugging purpose........ -->
+
+    <!-- JavaScript uses the keywords var, let and const to declare variables. -->
+
+
+    <!-- 4 Ways to Declare a JavaScript Variable:
+Using var
+Using let
+Using const
+Using nothing -->
+<!-- 
+let : not redecalred,, block scope... -->
+<!-- 
+var: redecalred, not block scope... -->
+<!-- 
+const: not redecalred, not reassigned, block scope.. -->
+
+<!-- object data type:
+
+ex:.. 
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+  person.lastName -->
+
+<!-- 
+  switch(expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  } -->
+
+  <!-- Different Kinds of Loops
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true -->
+
+<!-- for (let i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+  }
+  for (key in object) {
+    // code block to be executed
+  }
+  const person = {fname:"John", lname:"Doe", age:25};
+
+let text = "";
+for (let x in person) {
+  text += person[x];
+}
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text = "";
+for (let x of cars) {
+  text += x;
+} -->
+
+<!-- What is this?
+In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object. -->
+<!-- 
+this in a method
+<p id="demo"></p>
+<script>
+// create an object
+const person = {
+  firstName: "John",
+  lastName:"Doe",
+  id:5566,
+  fullName : function()
+  {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("demo").innerHTML = person.fullName();
+</script> -->
+
+<!-- this Alone
+<p id="demo"></p>
+<script>
+  document.getElementById("demo").innerHTML = this;
+</script> -->
+
+<!-- this with function()
+<p id="demo"></p>
+<script>
+  function myfunction()
+  {
+    return this;
+  }
+  document.getElementById("demo").innerHTML = myfunction();
+</script>
+here, when we use strict mode then it return undefined.
+<script>
+  "use strict"
+  function myfunction()
+  {
+    return this;
+  }
+  document.getElementById("demo").innerHTML = myfunction();
+</script> -->
+
+<!-- this in Event Handlers
+<button type="button" onclick="this.style.display = 'none' ">Click to remove me</button> -->
+
+<!-- Object Method Binding
+<h3>In this example this refer to the object</h3>
+<h4 id="demo"></h4>
+<script>
+  let person = {
+    firstName:"Shubham",
+    lastName:"Mishra",
+    id:420,
+    myfunction : function(){
+       return this;
+    }
+  }
+  document.getElementById("demo").innerHTML = person.myfunction();
+</script> -->
+
+<!-- <h1>Explicit Function Binding</h1>
+The call() and apply() methods are predefined JavaScript methods.
+
+They can both be used to call an object method with another object as argument.
+
+The Function call() Method
+
+The Function apply() Method
+
+The Function bind() Method
+
+<script>
+  let person1 = {
+    myfunction : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  let person2 = {
+    firstName:"Sunny",lastName:"Singh"
+  }
+  window.alert(person1.myfunction.call(person2));
+</script> -->
+
+<h2>Function Borrowing</h2>
+With the bind() method, an object can borrow a method from another object.
+This example creates 2 objects (person and member).
+<h3>The member object borrows the fullname method from the person object:</h3>
+<h4 id="demo"></h4>
+<script>
+  const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+
+window.alert(fullName());
+</script>
+
+
+<script>
+let person1 = {
+  firstName:"Anil",
+  lastName:"Deshmukh",
+  fullname: function(){
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+let member1 = {
+  firstName:"Rakesh",
+  lastName:"Kateriya",
+}
+
+let fullName1 = person1.fullname.bind(member1);
+window.alert(fullName1());
+
+</script>
+
+
+</body>
+</html>
